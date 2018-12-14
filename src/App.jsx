@@ -11,9 +11,6 @@ const App = props => {
   return (
     <React.Fragment>
       <CssBaseline />
-      <Button variant='contained' >
-        Hello
-      </Button>
     </React.Fragment>
   );
 }
