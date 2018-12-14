@@ -1,8 +1,27 @@
 import React from 'react';
 import Nav from '../components/Nav';
 
-const Home = () => (
-  <Nav />
-);
+import Typography from '@material-ui/core/Typography';
+import { withStyles } from '@material-ui/core/styles';
 
-export default Home;
+const styles = theme => ({
+  title: {
+    marginTop: theme.spacing.unit,
+    textAlign: 'center',
+  },
+})
+
+const Home = props => {
+  const { classes } = props
+
+  return (
+    <React.Fragment>
+      <Nav />
+      <Typography variant='h1' className={classes.title}>
+        Kafka Management Home Screen
+      </Typography>
+    </React.Fragment>
+  );
+}
+
+export default withStyles(styles)(Home);
