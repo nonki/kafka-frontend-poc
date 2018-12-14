@@ -22,12 +22,18 @@ const styles = {
 };
 
 export const AppBar = props => {
-  const { classes } = props;
+  const { classes, toggle } = props;
+
   return (
       <div className={classes.root}>
         <MaterialAppBar position='static'>
           <Toolbar>
-            <IconButton classname={classes.menuButton} color='inherit' aria-label='Menu'>
+            <IconButton
+              className={classes.menuButton}
+              color='inherit'
+              aria-label='Menu'
+              onClick={() => toggle(true)}
+            >
               <MenuIcon />
             </IconButton>
             <Typography variant='h6' color='inherit' className={classes.grow}>

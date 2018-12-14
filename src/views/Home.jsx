@@ -1,8 +1,8 @@
 import React from 'react';
-import AppBar from '../components/AppBar';
+import Nav from '../components/Nav';
 
 const Home = () => (
-  <AppBar />
+  <Nav />
 );
 
 export default Home;
