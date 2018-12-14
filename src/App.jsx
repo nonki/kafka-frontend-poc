@@ -6,7 +6,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import { theme } from './ThemeProvider';
 import { MuiThemeProvider } from '@material-ui/core/styles';
 
-import { Router } from './Router';
+import Router from './Router';
 
 const App = () => (
   <React.Fragment>
