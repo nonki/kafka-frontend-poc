@@ -17,7 +17,7 @@ const Home = props => {
   return (
     <React.Fragment>
       <Nav />
-      <Typography variant='h1' className={classes.title}>
+      <Typography variant='title' className={classes.title}>
         Kafka Management Home Screen
       </Typography>
     </React.Fragment>

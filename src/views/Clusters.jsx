@@ -2,6 +2,7 @@ import React from 'react';
 import Nav from '../components/Nav';
 
 import { withStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 
 const styles = theme => ({
   title: {
@@ -16,9 +17,9 @@ const Clusters = props => {
   return (
     <React.Fragment>
       <Nav />
-      <div className={classes.title}>
+      <Typography variant='title' className={classes.title}>
         Cluster manager page
-      </div>
+      </Typography>
     </React.Fragment>
   );
 }

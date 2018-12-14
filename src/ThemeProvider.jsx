@@ -12,7 +12,7 @@ export const theme = createMuiTheme({
     secondary: {
       main: red[shade],
     },
-    type: 'light',
+    type: 'dark',
   },
   typography: {
     useNextVariants: true,
